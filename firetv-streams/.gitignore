@@ -1,0 +1,15 @@
+# Android / Gradle build artifacts
+.gradle/
+build/
+app/build/
+local.properties
+*.apk
+*.aab
+*.iml
+.idea/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Keep the Gradle wrapper jar checked in (do NOT ignore it):
+!gradle/wrapper/gradle-wrapper.jar

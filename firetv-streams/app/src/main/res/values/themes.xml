@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Compose supplies the real UI theme (see Theme.kt). This XML theme only
+        needs to give the activity a dark, action-bar-less window before Compose
+        takes over, avoiding a white flash on launch.
+    -->
+    <style name="Theme.FireTVStreams" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+    </style>
+</resources>
