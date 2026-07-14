@@ -1,7 +1,9 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Indie Game Development"
+excerpt: "Small games made for fun, built solo as a hobby outside of research and teaching."
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+Outside of research, I design and program small video games as a hobby. It's an outlet that lets me apply programming skills in a completely different, more playful setting than distributed algorithms and complexity theory.
+
+You can find my projects on itch.io: **[n4xx.itch.io](https://n4xx.itch.io/)**

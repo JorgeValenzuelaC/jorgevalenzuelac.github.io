@@ -1,152 +1,145 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
+    "name": "Jorge Valenzuela Carrasco",
+    "email": "jorgevalenzuela@ug.uchile.cl",
     "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "website": "https://jorgevalenzuelac.github.io",
+    "summary": "PhD student in Complex Systems Engineering at Universidad Adolfo Ibáñez. Interested in quantum computing, graph theory, and distributed algorithms.",
     "location": {
       "address": "",
       "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Santiago",
+      "countryCode": "CL",
+      "region": "Región Metropolitana"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "JorgeValenzuelaC",
+        "url": "https://github.com/JorgeValenzuelaC"
+      },
+      {
+        "network": "itch.io",
+        "username": "n4xx",
+        "url": "https://n4xx.itch.io/"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "XR-Labs, Universidad de Chile",
+      "position": "Professional Internship III",
+      "startDate": "2024-11",
+      "endDate": "2024-12",
+      "summary": "Programming a short animated VR film using Unreal Engine 5."
+    },
+    {
+      "company": "XR-Labs, Universidad de Chile",
+      "position": "Professional Internship II",
+      "startDate": "2024-08",
+      "endDate": "2024-10",
+      "summary": "Statistical analysis of data from research on horror video games using immersive VR technologies."
+    },
+    {
+      "company": "Enerdis SpA",
+      "position": "Professional Internship I",
+      "startDate": "2022-01",
+      "endDate": "2022-03",
+      "summary": "Solar radiation prediction using Machine Learning."
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "Universidad Adolfo Ibáñez",
+      "area": "Ph.D. in Complex Systems Engineering (Doctorado en Ingeniería de Sistemas Complejos)",
+      "studyType": "Ph.D.",
+      "startDate": "2026",
+      "endDate": "",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "institution": "Universidad de Chile",
+      "area": "Applied Mathematics",
+      "studyType": "M.Sc.",
+      "startDate": "2025",
+      "endDate": "2026",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "Universidad de Chile",
+      "area": "Ingeniería Civil Matemática",
+      "studyType": "Civil Engineering, Mathematics",
+      "startDate": "2019",
+      "endDate": "2026",
+      "gpa": null,
+      "courses": []
+    },
+    {
+      "institution": "Universidad de Chile",
+      "area": "Engineering Sciences, Mention in Mathematics",
+      "studyType": "B.Sc.",
+      "startDate": "2019",
+      "endDate": "2024",
       "gpa": null,
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
+  "skills": [
+    {
+      "name": "Programming",
+      "keywords": ["C++", "Python", "HTML", "JavaScript", "LaTeX"]
+    }
+  ],
+  "languages": [
+    { "language": "Spanish", "fluency": "Native" },
+    { "language": "English", "fluency": "Advanced" }
+  ],
+  "interests": [
+    { "name": "Indie game development" }
+  ],
   "references": [],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "Quantum Communication Can Be Exponentially Weaker than Public Coins in Multiparty SMP",
+      "publisher": "Preprint",
+      "releaseDate": "2026-01-01",
+      "website": "https://jorgevalenzuelac.github.io/files/exponential.pdf",
+      "summary": "Establishes an exponential separation between the public-coin and quantum SMP models for a k-party generalization of Index Coordination."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "The Local Complexity of Certifying Parity",
+      "publisher": "Preprint",
+      "releaseDate": "2025-10-01",
+      "website": "",
+      "summary": "Studies locally checkable proof (LCP) schemes for certifying parity-type properties in distributed networks."
     }
   ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
+  "presentations": [],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
+      "course": "Calculabilidad y Complejidad Computacional",
+      "institution": "Universidad de Chile",
+      "date": "2026-03-01",
+      "role": "Profesor Auxiliar (Instructor)",
       "description": ""
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
+      "course": "Cálculo Avanzado y Aplicaciones",
+      "institution": "Universidad de Chile",
+      "date": "2024-09-01",
+      "role": "Ayudante (Teaching Assistant)",
       "description": ""
     }
   ],
   "portfolio": [
     {
-      "name": "Portfolio item number 1",
+      "name": "Indie Game Development",
       "category": "portfolio",
       "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "url": "https://n4xx.itch.io/",
+      "description": "Small games designed and programmed solo as a hobby. See projects on itch.io."
     }
   ]
 }
