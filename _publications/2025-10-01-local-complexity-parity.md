@@ -4,8 +4,8 @@ collection: publications
 category: papers
 permalink: /publication/2025-local-complexity-parity
 excerpt: 'A study of the local complexity of certifying parity-type properties in distributed networks, in the context of locally checkable proofs (LCPs).'
-date:
 venue: 'DISC 2026'
+paperurl: https://arxiv.org/abs/2606.04934v1
 citation: 'Bousquet, N., Feuilloley, L., Valenzuela, J., &amp; Zeitoun, S. (2025). &quot;The Local Complexity of Certifying Parity.&quot; DISC 2026.'
 ---
 

@@ -4,7 +4,6 @@ collection: publications
 category: preprints
 permalink: /publication/2026-exponential-smp
 excerpt: 'We establish an exponential separation between the public-coin and quantum Simultaneous Message Passing (SMP) models for a natural k-party generalization of Index Coordination.'
-date:
 venue: 'Preprint'
 paperurl: '/files/exponential.pdf'
 citation: 'Montealegre, P., Rapaport, I., &amp; Valenzuela, J. (2026). &quot;Quantum Communication Can Be Exponentially Weaker than Public Coins in Multiparty SMP.&quot; Preprint.'
