@@ -1,7 +1,7 @@
 ---
 title: "The Local Complexity of Certifying Parity"
 collection: publications
-category: paper
+category: papers
 permalink: /publication/2025-local-complexity-parity
 excerpt: 'A study of the local complexity of certifying parity-type properties in distributed networks, in the context of locally checkable proofs (LCPs).'
 date: 2026-11-13
