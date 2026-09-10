@@ -41,9 +41,9 @@
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
-          {% if post.venue != 'Preprint' and page.date %}
+          {% if post.venue != 'Preprint' and post.date %}
             <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-          {% elsif post.venue == 'Preprint' and page.date %}
+          {% elsif post.venue == 'Preprint' and post.date %}
             <p> <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
           {% endif %}
         {% elsif post.date %}
