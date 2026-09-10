@@ -6,7 +6,7 @@ permalink: /publication/2026-exponential-smp
 excerpt: 'We establish an exponential separation between the public-coin and quantum Simultaneous Message Passing (SMP) models for a natural k-party relational problem.'
 venue: 'Preprint'
 paperurl: https://arxiv.org/abs/2609.10289
-citation: 'Montealegre, P., Rapaport, I., &amp; Valenzuela, J. (2026). &quot;Quantum Communication Can Be Exponentially Weaker than Public Coins in Multiparty SMP.&quot; Preprint.'
+citation: 'Montealegre, P., Rapaport, I., &amp; Valenzuela, J. (2026). &quot;On the Limits of Quantum Multiparty Simultaneous Communication.&quot; Preprint.'
 ---
 
 The Simultaneous Message Passing (SMP) model provides a fundamental framework for comparing classical and quantum communication. For two players, Gavinsky et al. (STOC 2006) established a separation underlying the incomparability of shared randomness and quantum communication: \textsc{Index Coordination} needs *O(\log n)* public-coin bits but *\Omega(n^{1/3})* bounded-error qubits.
