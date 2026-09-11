@@ -12,7 +12,12 @@
   {% assign title = post.title %}
 {% endif %}
 
-<div class="{{ include.type | default: "list" }}__item">
+{% assign compact_publication = false %}
+{% if include.compact and post.collection == 'publications' %}
+  {% assign compact_publication = true %}
+{% endif %}
+
+<div class="{{ include.type | default: "list" }}__item{% if compact_publication %} publication__item{% endif %}">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
@@ -26,18 +31,44 @@
       </div>
     {% endif %}
 
-    <h2 class="archive__item-title" itemprop="headline">
+    {% capture item_title %}
       {% if post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
-    </h2>
-    
+    {% endcapture %}
+
+    {% if compact_publication %}
+      <details class="publication__details">
+        <summary class="publication__summary">
+          <span class="publication__heading">
+            <span class="publication__title" itemprop="headline">{{ item_title }}</span>
+            {% if post.venue %}
+              <span class="publication__venue">
+                {% if post.venue == 'Preprint' %}
+                  <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %}
+                {% else %}
+                  Published in <i>{{ post.venue }}</i>
+                {% endif %}
+              </span>
+            {% endif %}
+          </span>
+          <span class="publication__toggle" aria-hidden="true">
+            <span class="publication__expand">+</span>
+            <span class="publication__collapse">&minus;</span>
+          </span>
+        </summary>
+        <div class="publication__content">
+    {% else %}
+      <h2 class="archive__item-title" itemprop="headline">{{ item_title }}</h2>
+    {% endif %}
+
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
 
+    {% unless compact_publication %}
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.collection == 'publications' %}
@@ -49,6 +80,8 @@
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
+
+    {% endunless %}
 
     {% if post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
@@ -84,5 +117,9 @@
       <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% endif %}
 
+    {% if compact_publication %}
+        </div>
+      </details>
+    {% endif %}
   </article>
 </div>

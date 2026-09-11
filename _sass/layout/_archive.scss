@@ -109,6 +109,106 @@
 
 
 /*
+   Compact publications
+   ========================================================================== */
+
+.publication__item {
+  margin-bottom: 0;
+}
+
+.publication__details {
+  border-bottom: 1px solid var(--global-border-color);
+}
+
+.publication__summary {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 0.85em 0;
+  cursor: pointer;
+  list-style: none;
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--global-link-color);
+    outline-offset: 4px;
+    border-radius: $border-radius;
+  }
+}
+
+.publication__heading {
+  flex: 1;
+  min-width: 0;
+}
+
+.publication__title {
+  display: block;
+  font-family: $sans-serif-narrow;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+
+  a {
+    text-decoration: none;
+  }
+
+  a + a {
+    opacity: 0.5;
+  }
+}
+
+.publication__venue {
+  display: block;
+  margin-top: 0.25em;
+  color: var(--global-text-color);
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.publication__toggle {
+  display: inline-flex;
+  flex: 0 0 2.25rem;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 50%;
+  background: var(--global-bg-color);
+  color: var(--global-link-color);
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.publication__summary:hover .publication__toggle,
+.publication__summary:focus-visible .publication__toggle,
+.publication__details[open] .publication__toggle {
+  border-color: var(--global-link-color);
+}
+
+.publication__collapse,
+.publication__details[open] .publication__expand {
+  display: none;
+}
+
+.publication__details[open] .publication__collapse {
+  display: inline;
+}
+
+.publication__content {
+  padding: 0.25em 0 0.85em;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+}
+
+
+/*
    Grid view
    ========================================================================== */
 
