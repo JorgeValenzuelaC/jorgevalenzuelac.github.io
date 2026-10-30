@@ -5,7 +5,7 @@ category: preprints
 permalink: /publication/2026-parity-tight
 excerpt: 'We prove tight bounds for the problem of certifying parity in the anonymous model with radius 1'
 venue: 'Preprint'
-paperurl: https://arxiv.org/abs/2609.10289
+paperurl: https://arxiv.org/abs/2610.38829
 citation: 'Montealegre, P., &amp; Valenzuela, J. (2026). &quot;Tight Bounds for Anonymous Parity Certification.&quot; Preprint.'
 ---
 
